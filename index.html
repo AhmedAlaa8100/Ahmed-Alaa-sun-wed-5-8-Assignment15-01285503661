@@ -1,0 +1,143 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- main style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- media style -->
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body class="bg-dark">
+    <section class="games">
+      <header>
+        <img src="imgs/wraper.png" class="w-100" alt="game photo" />
+      </header>
+
+      <nav
+        class="navbar navbar-expand-lg nav-bg position-sticky top-0 z-3 col-md-6 col-lg-9 justify-content-center m-auto bg-warning rounded-3"
+      >
+        <div class="container">
+          <h5 class="navbar-brand mb-0 text-uppercase">
+            <img
+              src="imgs/logo-sm.png"
+              alt="logo photo"
+              style="max-width: 40px"
+            />
+            Game Reviews
+          </h5>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse small navbar-collapse"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu small">
+              <li class="nav-item">
+                <a
+                  role="button"
+                  class="nav-link text-uppercase"
+                  aria-current="page"
+                  data-category="mmorpg"
+                  >mmorpg</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  role="button"
+                  class="nav-link text-uppercase"
+                  data-category="shooter"
+                  >shooter</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  role="button"
+                  class="nav-link text-uppercase"
+                  data-category="sailing"
+                  >sailing</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  role="button"
+                  class="nav-link text-uppercase"
+                  data-category="permadeath"
+                  >permadeath</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  role="button"
+                  class="nav-link text-uppercase active"
+                  data-category="superhero"
+                  >superhero</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  role="button"
+                  class="nav-link text-uppercase"
+                  data-category="pixel"
+                  >pixel</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section class="gamesList my-5" id="list">
+      <div class="container">
+        <div class="row"></div>
+      </div>
+    </section>
+    <div class="modal fade" id="gameModal" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content bg-dark text-white">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitle">Game Title</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" id="modalBody">
+            <p>Loading...</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#" target="_blank" id="gameLink" class="btn btn-primary"
+              >Show Game</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>

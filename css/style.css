@@ -1,0 +1,13 @@
+html{
+    scroll-padding-top: 73px;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
