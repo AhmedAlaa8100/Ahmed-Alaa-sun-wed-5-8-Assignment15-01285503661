@@ -5,11 +5,11 @@ export function displayGames(games) {
   for (let i = 0; i < games.length; i++) {
     cartona += `
       <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="game-card p-2 border border-1 h-100 bg-dark text-white rounded-3" data-id="${games[i].id}">
+        <div class="game-card d-flex flex-column py-3 px-2 border border-1 m-1 h-100 bg-dark text-white rounded-3" data-id="${games[i].id}">
           <img src="${games[i].thumbnail}" alt="" class="w-100 rounded">
           <div class="gametitle d-flex justify-content-between my-2">
             <span>${games[i].title}</span>
-            <div class="fp bg-info p-1 px-2 rounded-2 text-dark small">Free</div>
+            <span class="fp bg-info p-1 px-2 rounded-2 text-dark small">Free</span>
           </div>
           <p class="small">${games[i].short_description}</p>
           <div class="gameinfo border-top pt-2 d-flex justify-content-between small">
